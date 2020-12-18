@@ -10,7 +10,7 @@
     "commit": "git-cz",
     "postinstall": "lerna bootstrap",
     "presemantic-release": "npm i",
-    "semantic-release": "multi-semantic-release --sequential-init --debug --first-parent --no-ci"
+    "semantic-release": "GH_TOKEN=21c08293dd4eaccf27528a0d44c6b472098e8095 multi-semantic-release --sequential-init --debug --first-parent --no-ci"
   },
   "repository": {
     "type": "git",
