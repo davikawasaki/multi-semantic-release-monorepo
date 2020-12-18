@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "Management release for monorepo using multi semantic releases",
   "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "commit": "git-cz",
     "postinstall": "lerna bootstrap",
