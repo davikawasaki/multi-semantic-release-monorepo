@@ -1,0 +1,26 @@
+{
+  "name": "lib",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Davi Kawasaki <davishinjik@gmail.com>",
+  "homepage": "https://github.com/davikawasaki/multi-semantic-release-monorepo/tree/master/packages/lib#readme",
+  "license": "MIT",
+  "main": "lib/lib.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davikawasaki/multi-semantic-release-monorepo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/davikawasaki/multi-semantic-release-monorepo/issues"
+  }
+}
