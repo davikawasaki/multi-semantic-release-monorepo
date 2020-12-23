@@ -24,6 +24,6 @@
     "url": "https://github.com/davikawasaki/multi-semantic-release-monorepo/issues"
   },
   "dependencies": {
-    "lib": "1.0.0"
+    "lib": "1.0.0-dev.1"
   }
 }
