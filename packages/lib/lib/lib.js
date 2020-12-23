@@ -1,7 +1,7 @@
-'use strict';
+'use strict'
 
-module.exports = lib;
-
-function lib() {
-    // TODO
+const greeting = (name) => {
+    return "Hello, " + name + "!"
 }
+
+module.exports = greeting
