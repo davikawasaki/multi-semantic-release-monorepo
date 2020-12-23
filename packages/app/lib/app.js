@@ -1,7 +1,5 @@
-'use strict';
+'use strict'
 
-module.exports = app;
+const greeting = require('lib')
 
-function app() {
-    // TODO
-}
+console.log(greeting("Davi"))
