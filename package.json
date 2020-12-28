@@ -11,8 +11,10 @@
     "postinstall": "lerna bootstrap",
     "presemantic-release": "npm i",
     "presemantic-release-local": "npm i",
+    "presemantic-release-pr": "npm i",
     "semantic-release": "multi-semantic-release --sequential-init --debug --first-parent",
-    "semantic-release-local": "multi-semantic-release --sequential-init --debug --first-parent --no-ci"
+    "semantic-release-local": "multi-semantic-release --sequential-init --debug --first-parent --no-ci",
+    "semantic-release-pr": "semantic-release-github-pr"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,7 @@
     "git-cz": "4.7.6",
     "husky": "4.3.6",
     "lerna": "3.22.1",
-    "semantic-release": "17.3.0"
+    "semantic-release": "17.3.0",
+    "semantic-release-github-pr": "6.0.1"
   }
 }
