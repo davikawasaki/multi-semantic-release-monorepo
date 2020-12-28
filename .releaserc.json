@@ -1,5 +1,4 @@
 {
-  "baseBranch": "main",
   "branches": [
     { "name": "main", "prerelease": "dev" },
     { "name": "release" }
