@@ -1,7 +1,7 @@
 'use strict'
 
-const greeting = (objArg) => {
-    return "Hello, " + objArg.name + "!"
+const greeting = (name) => {
+    return "Hello, " + name + "!"
 }
 
 module.exports = greeting
