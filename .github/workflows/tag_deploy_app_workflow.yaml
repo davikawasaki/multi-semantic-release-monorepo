@@ -3,8 +3,8 @@ name: Deploy package on dev/staging tag creation
 on:
   push:
     tags:
-      - 'app@*dev*'
-      - 'app@*staging*'
+      - '*app*dev*'
+      - '*app*staging*'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
