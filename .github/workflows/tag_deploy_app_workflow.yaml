@@ -1,7 +1,6 @@
 on:
-  push:
-    tags:
-      - 'app@*-dev*'
+  release:
+    types: [prereleased]
 name: Deploy package on tag creation
 jobs:
   build-and-deploy:
