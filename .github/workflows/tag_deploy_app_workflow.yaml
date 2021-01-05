@@ -4,6 +4,7 @@ on:
 name: Deploy package on tag creation
 jobs:
   build-and-deploy:
+    if: startsWith(github.ref, 'refs/heads/lib@')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
