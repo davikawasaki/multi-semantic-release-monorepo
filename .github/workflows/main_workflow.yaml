@@ -32,6 +32,4 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - run: npm run semantic-release
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN_SR }}
+      - run: GITHUB_TOKEN=${{ secrets.GH_TOKEN_SR }} npm run semantic-release
