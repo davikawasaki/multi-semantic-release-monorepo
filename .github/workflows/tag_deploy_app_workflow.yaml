@@ -1,10 +1,9 @@
-name: Deploy package on dev/staging tag creation
-
+name: Deploy package on tag creation
 on:
   push:
     tags:
       - '*dev*'
-      - '*staging*'
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
