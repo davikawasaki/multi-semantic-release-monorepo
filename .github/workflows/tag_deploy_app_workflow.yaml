@@ -1,9 +1,10 @@
-name: Deploy package on tag creation
 on:
   push:
+    branches:
+      - main
     tags:
-      - '*'
-
+      - app@[0-9]+.[0-9]+.[0-9]+-dev.[0-9]+
+name: Deploy package on tag creation
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
