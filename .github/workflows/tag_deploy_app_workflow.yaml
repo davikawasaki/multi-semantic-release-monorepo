@@ -2,7 +2,7 @@ name: Deploy package on tag creation
 on:
   push:
     tags:
-      - app@*
+      - '*'
 
 jobs:
   build-and-deploy:
