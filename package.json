@@ -7,10 +7,13 @@
     "packages/*"
   ],
   "scripts": {
+    "transpile": "npm run tr-lib && npm run tr-app",
+    "tr-lib": "babel --delete-dir-on-start --verbose --out-dir packages/lib/dist --copy-files packages/lib/lib",
+    "tr-app": "babel --delete-dir-on-start --verbose --out-dir packages/app/dist --copy-files packages/app/lib",
     "commit": "git-cz",
     "postinstall": "lerna bootstrap",
-    "presemantic-release": "npm i",
-    "presemantic-release-local": "npm i",
+    "presemantic-release": "npm i && npm run transpile",
+    "presemantic-release-local": "npm i && npm run transpile",
     "semantic-release": "multi-semantic-release --sequential-init --debug --first-parent",
     "semantic-release-local": "multi-semantic-release --sequential-init --debug --first-parent --no-ci"
   },
@@ -38,6 +41,15 @@
     "git-cz": "4.7.6",
     "husky": "4.3.6",
     "lerna": "3.22.1",
-    "semantic-release": "17.3.0"
+    "semantic-release": "17.3.0",
+    "@babel/cli": "7.12.1",
+    "@babel/core": "7.12.3",
+    "@babel/plugin-proposal-class-properties": "7.12.1",
+    "@babel/plugin-proposal-decorators": "7.12.1",
+    "@babel/plugin-proposal-optional-chaining": "7.12.1",
+    "@babel/polyfill": "7.12.1",
+    "@babel/preset-env": "7.12.1",
+    "@babel/register": "7.12.1",
+    "babel-eslint": "10.1.0"
   }
 }
