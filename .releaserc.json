@@ -6,6 +6,7 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     {
+      "preset": "conventionalcommits",
       "releaseRules": [
         {"type": "major", "release": "major"},
         {"type": "minor", "release": "minor"},
@@ -13,6 +14,8 @@
         {"type": "feat", "release": false},
         {"type": "chore", "release": false},
         {"type": "fix", "release": false},
+        {"type": "perf", "release": false},
+        {"type": "style", "release": false},
         {"type": "docs", "release": false},
         {"type": "refactor", "release": false},
         {"scope": "no-release", "release": false}
