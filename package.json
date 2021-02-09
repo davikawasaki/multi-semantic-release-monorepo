@@ -4,7 +4,8 @@
   "description": "Management release for monorepo using multi semantic releases",
   "main": "index.js",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "!packages/lib/**"
   ],
   "scripts": {
     "transpile": "npm run tr-lib && npm run tr-app",
